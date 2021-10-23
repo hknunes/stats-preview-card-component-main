@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+body {
+  background-color: #090b1a;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.5;
+  text-align: left;
+}
+
+mark {
+  background-color: transparent;
+  color: #aa5cdb;
+}
+
+.card {
+  background-color: #1b1938;
+  max-width: 75vw;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-radius: 10px;
+}
+
+.card__content-left {
+  padding: 56px;
+  padding-right: 80px;
+}
+
+.card__content-right {
+  background: url(images/image-header-desktop.jpg) no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  width: 100%;
+  border-radius: 0 10px 10px 0;
+}
+
+.card__content-right .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #aa5cdb;
+  opacity: 0.5;
+}
+
+.container-stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 48px;
+}
+
+.stats__value {
+  font-family: "Inter", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.stats__label {
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=styles.css.map */

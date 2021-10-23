@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+$background-primary: hsl(233, 47%, 7%);
+$background-secondary: hsl(244, 38%, 16%);
+$accent-color: hsl(277, 64%, 61%);
+
+$white:hsl(0, 0%, 100%);
+$white75: hsla(0, 0%, 100%, 0.75);
+$white60: hsla(0, 0%, 100%, 0.6);
+
+$font-inter: 'Inter', sans-serif;
+$font-lexend: 'Lexend Deca', sans-serif;
+
+$font-size-base: 15px;
+
+$font-regular:400;
+$font-bold:700;
+
+body{
+    background-color: $background-primary;
+    color: $white;
+    font-family: $font-inter;
+    font-size: $font-size-base;
+    font-weight: $font-regular;
+}
+
+h1{
+    font-size: 40px;
+}
+
+p{
+    color: $white75;
+    line-height: 1.5;
+    text-align: left;
+}
+
+mark{
+    background-color: transparent;
+    color: $accent-color;
+}
+.card{
+    background-color: $background-secondary;
+    max-width: 75vw;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+
+    &__content-left{
+        padding: 56px;
+        padding-right: 80px;
+    }
+
+    &__content-right{
+        background: url(images/image-header-desktop.jpg) no-repeat; 
+        background-size: cover;
+        min-height: 100%;
+        width: 100%;
+        border-radius: 0 10px 10px 0;
+
+        .overlay{
+            width: 100%;
+            height: 100%;
+            background-color: $accent-color;
+            opacity: 0.5;
+        }
+    }
+}
+
+.container{
+    &-stats{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 48px;
+    }
+}
+
+.stats{
+    &__value{
+        font-family: $font-inter;
+        font-size: 28px;
+        font-weight: $font-bold;
+    }
+
+    &__label{
+        color: $white60;
+        text-transform: uppercase;
+        margin-top: 
+        8px;
+    }
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
